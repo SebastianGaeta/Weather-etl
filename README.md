@@ -5,7 +5,7 @@ This project is a simple **Extract-Transform-Load (ETL)** pipeline built in Pyth
 It extracts forecast data, cleans and transforms it, then loads it into a **MySQL database** for long-term storage and analysis.
 
 ---
-
+```
 ## Project Structure
 
 weather_etl/
@@ -16,7 +16,7 @@ weather_etl/
 ├── data.csv                # Output file (auto-generated)
 ├── run.log                 # Log file (auto-generated)
 └── README.md               # Project documentation
-
+```
 ---
 
 ## How It Works
@@ -54,4 +54,5 @@ CREATE TABLE City_weather_data (
     temperature SMALLINT,
     date VARCHAR(50),
     CONSTRAINT UC_weather UNIQUE (city, date)
+
 );
