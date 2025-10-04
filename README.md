@@ -41,7 +41,7 @@ weather_etl/
 ### **3. Load**
 - Inserts data into a MySQL table called `City_weather_data`.
 - Enforces a **unique constraint on `(city, date)`** to prevent duplicate records.
-- Logs successful inserts and skipped duplicates.
+- Logs successful inserts and skips duplicates.
 
 ---
 
@@ -56,3 +56,4 @@ CREATE TABLE City_weather_data (
     CONSTRAINT UC_weather UNIQUE (city, date)
 
 );
+
